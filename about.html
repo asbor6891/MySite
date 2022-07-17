@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website (Ver. 2)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="toggle" onclick="toggleMenu();"></div>
+
+    <section class="banner">
+        <div class="imgSidebar">
+            <img src="img/bg.jpg">
+        </div>
+        <div class="contentBx">
+            <h5 class="logoText"><a href="https://t.me/asbor6891" target="_blank">@asbor6891</a></h5>
+            <div>
+                <!-- <h4><span>Привет</span>,</h4> -->
+                <h2>Меня зовут Алексей</h2>
+                <!-- <h4>я PHP разработчик</h4> -->
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia blanditiis delectus cumque assumenda ut iste repudiandae, illum ea eius, veniam doloribus officia fuga veritatis similique dicta ipsum itaque quos saepe? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia blanditiis delectus cumque assumenda ut iste repudiandae, illum ea eius, veniam doloribus officia fuga veritatis similique dicta ipsum itaque quos saepe?</p>
+                <a download="" href="resume/ResumeBorzenkoAS.pdf" class="btn">Скачать резюме</a>
+            </div>
+            <ul class="sci">
+                <li><a href="https://vk.com/asbor6891" target="_blank"><img src="img/vk.png"></a></li>
+                <li><a href="https://t.me/asbor6891" target="_blank"><img src="img/telegram.png"></a></li>
+                <li><a href="https://github.com/asbor6891" target="_blank"><img src="img/github.png"></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a href="index.html">На главную</a></li>
+            <li><a href="about.html">Обо мне</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.toggle');
+            const sidebar = document.querySelector('.sidebar');
+            menuToggle.classList.toggle('active');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
